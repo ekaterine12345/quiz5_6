@@ -11,4 +11,4 @@
 აგრეთვე არის კიდევ ერთი გვერდი სადაც განთავსებულია ქვეყნების ფოტოები;
 
 პროგრამა განთავსებულია pythonayawhere სერვერზე
-პროგრამის ლინკია: http://ekaterinegurgenidze.pythonanywhere.com/user
+პროგრამის ლინკია: http://ekaterinegurgenidze.pythonanywhere.com/
