@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    {{ super() }}
+<center>
+
+    <h2>My Page</h2>
+
+<h3>I wont to visit: </h3>
+    {% for i in my_countries %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+<br>
+<br>
+<img src="{{url_for('static', filename='img/user.png')}}">
+<br>
+<br>
+</center>
+
+<a href="{{url_for('home')}}" style="text-decoration: none; color: black"> მთავარი გვერდზე გადასვლა </a>
+{% endblock %}

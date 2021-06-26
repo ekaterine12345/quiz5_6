@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+<center>
+    <h2>Login Page </h2>
+
+    <form method="post" style="width:50%; margin-left:30px;">
+        <input type="text" name="username" class="form-control mb-3 mt-3" placeholder="username">
+        <input type="password" name="password" class="form-control" placeholder="password">
+
+         {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, msg in messages %}
+                <p class="{{category}}">{{ msg }}</p>
+            {% endfor %}
+        {% endwith %}
+        <button type="submit" class="btn btn-success mt-3">Log In</button>
+    </form>
+
+</center>
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    {{ super() }}
+<center>
+
+    <h2>Countries:</h2>
+
+
+<br>
+<br>
+<img src="{{url_for('static', filename='img/Georgia.jpg')}}">
+<img src="{{url_for('static', filename='img/England.jpg')}}">
+<img src="{{url_for('static', filename='img/China.jpeg')}}">
+<img src="{{url_for('static', filename='img/France.jpg')}}">
+<img src="{{url_for('static', filename='img/USA.jpg')}}">
+<img src="{{url_for('static', filename='img/Japan.jpg')}}">
+
+<br>
+<br>
+</center>
+
+<a href="{{url_for('home')}}" style="text-decoration: none; color: black"> მთავარი გვერდზე გადასვლა </a>
+{% endblock %}

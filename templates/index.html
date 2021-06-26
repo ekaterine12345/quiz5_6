@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home page
+{% endblock %}
+
+
+{% block content %}
+    {{ super() }}
+    <h2>Home page</h2>
+    <br>
+    <table>
+        <tr>
+         <th>Position</th>
+         <th>Country or dependency</th>
+         <th>Population</th>
+         <th>Land Area (km^2) </th>
+        </tr>
+
+    {% for each in all_countries %}
+    <tr>
+    <td>{{each.id}}</td>
+    <td>{{each.country_name}}</td>
+    <td>{{each.population}}</td>
+    <td>{{each.area}}</td>
+    </tr>
+        {% endfor %}
+ </table>
+
+{% endblock %}
